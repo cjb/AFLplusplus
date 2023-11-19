@@ -6,8 +6,8 @@ This directory contains benchmarking tools that allow you to compare one machine
 with another in terms of raw ability to execute a fuzzing target repeatedly.
 
 To achieve this, we use a sample program ("test-instr.c") where each path is
-equally likely, supply it a single seed, and tell AFL to exit after one run of
-deterministic mutations against that seed.
+equally likely, supply it a single seed, and tell AFL to exit after ten
+seconds of executing against mutations of that seed.
 
 Usage example:
 
